@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:background="#000033"
+    tools:context="appstudylive.weebly.com.stopwatch.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"                                android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_weight="0.25"
+        android:textSize="92sp" android:id="@+id/text"
+android:background="#006699"/>
+    <Button
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        android:onClick="onStart" />
+
+    <Button
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.03"
+        android:onClick="onStop" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        android:onClick="onReset" />
+
+
+</LinearLayout>
